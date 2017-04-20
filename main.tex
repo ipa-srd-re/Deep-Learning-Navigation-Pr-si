@@ -1,4 +1,4 @@
-\documentclass{beamer}
+\documentclass[aspectratio=1610]{beamer}
 \usetheme{metropolis}           % Use metropolis theme
 \title{Machine learning im Bereich der Robotik}
 \date{\today}
@@ -11,6 +11,12 @@
   	\includegraphics[scale=0.15]{img/pancake.png} \\
   	\url{https://youtu.be/W_gxLKSsSIE?t=51}
   \end{center}
+  \end{frame}
+  
+  \begin{frame}
+  	\begin{itemize}
+  		\item Viel Machine Learning im Zusammenhang mit Computer Vision
+  	\end{itemize}
   \end{frame}
   
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -41,11 +47,13 @@
   			\item Mittlere Kamera in Richtung des Pfads
   			\item Kategorisierung der Kameras als Links, Mitte und Rechts
   		\end{itemize}
+  		\pause
   		\item Phase 2: Das System trainieren
   		\begin{itemize}
   			\item Das System erhält >17.000 Trainingsbilder
   			\item Das System versucht diese in Links, Mitte und Rechts zu kategorisieren
   		\end{itemize}
+  		\pause
   		\item Phase 3: Das System testen
   		\begin{itemize}
   			\item Das System wird zuerst mit >7000 Testbildern getestet
@@ -58,6 +66,7 @@
   	Zusammenfassung
   	\begin{itemize}
   		\item Bei der Kategorisierung ist die Drone stellenweise besser als Menschen
+  		\pause
   		\item Die Drone schafft es selbstständig auch auf unbekannten Wegen zu fliegen
   		
   	\end{itemize}
@@ -74,14 +83,82 @@
   \end{frame}
   
   \begin{frame}{EUROPA2 - European Robotic Pedestrian Assistant 2.0}
-  	Es gibt ca 60 Dokumente (Paper und Bücher) zu Themen wie
+  	Es gibt ca 60 Dokumente zu Themen wie
   	\begin{itemize}
   		% http://europa2.informatik.uni-freiburg.de/files/kretzschmar14icra.pdf
-  		\item Vorhersagen zur Bewegung von Menschen
+  		\item \textbf{Vorhersagen zur Bewegung von Menschen}
+  		\pause
   		% http://europa2.informatik.uni-freiburg.de/files/ilg14icra.pdf
   		\item Rekonstruktion von bewegten Objekten mithilfe eines 2D Laserscanners und einer Kamera
+  		\pause
   		% http://europa2.informatik.uni-freiburg.de/files/kuemmerle14jfr.pdf
   		\item Autonome Navigation in populierten Gegenden
+  		\pause
+  		% http://europa2.informatik.uni-freiburg.de/files/ruchti15icra.pdf
+  		\item Lokalisierung in OpenStreetMap mithilfe eines 3D scanners
+  		\pause
+  		% http://europa2.informatik.uni-freiburg.de/files/vysotska15icra.pdf
+  		\item Lokalisierung unter verschiedenen Bedingungen
+  		\pause
+  		% http://europa2.informatik.uni-freiburg.de/files/oliveira16icra.pdf
+  		\item \textbf{Identifizierung von menschlichen Körperteilen mithilfe von Computer Vision und Convoluted Neural Networks}
+  		\pause
+  		% http://europa2.informatik.uni-freiburg.de/files/IROS16_1259_FI.pdf
+  		\item Vorhersage von menschlichen Aktionen
+  		\pause
+  		% http://europa2.informatik.uni-freiburg.de/files/kretzschmar16ijrr.pdf
+  		\item \textbf{Lernen und Nachahmung von menschlichen Bewegungen}
+  	\end{itemize}
+  \end{frame}
+  
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %%%%%%%%% LifeNav %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \section{LifeNav}
+  \begin{frame}{LifeNav}
+  	\begin{center}
+  		\includegraphics[scale=0.15]{img/lifenav.png} \\
+  		\url{https://youtu.be/kdQUOZ7dPTc?t=7}
+  	\end{center}
+  \end{frame}
+  
+  \begin{frame}{LifeNav}
+  	Es gibt ca 40 Dokumente zu Themen wie
+  	\begin{itemize}
+  		% http://www.lifelong-navigation.eu/files/tipaldi13icra.pdf
+  		\item Wiedererkennung von Orten
+  		\pause
+		% http://www.lifelong-navigation.eu/files/tipaldi13ijrr.pdf  		
+  		\item Lokalisierung in veränderbaren Umgebungen
+  		\pause
+  		% http://www.lifelong-navigation.eu/files/valada15isrr.pdf
+  		\item \textbf{Lernen von Features basierend auf Akkustik}
+  		\pause
+  		% http://www.lifelong-navigation.eu/files/mazuran15icra.pdf
+  		\item \textbf{Lehren und Optimierung eines Pfades}
+  		\pause
+  		% http://www.lifelong-navigation.eu/files/valada16rssws.pdf
+  		\item \textbf{Segmentierung eines Bildes unter schwierigen Bedingungen}
+  	\end{itemize}
+  \end{frame}
+  
+  \begin{frame}{LifeNav}
+  	\begin{center}
+  		\includegraphics[scale=0.26]{img/segmentation.png}
+  	\end{center}
+  \end{frame}
+  
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %%%%%%%%% Andere Projekte %%%%%%%%%%%%%%%%%%%%%%
+  \section{Andere Projekte}
+  \begin{frame}{Andere Projekte}
+  	In anderen Projekten wird Machine Learning benutzt, um
+  	\begin{itemize}
+  		% https://arxiv.org/pdf/1703.00420.pdf
+  		\item \href{https://youtu.be/9AOIwBYIBbs?t=70}{Bewegung ohne vorgegebene Karte}
+  		% http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7605233
+  		\item \href{https://www.youtube.com/watch?v=fL3YCIPxuhM&feature=youtu.be}{Jagen eines Beuteroboters}
+  		% http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6630809
+  		\item \href{https://youtu.be/hNsP6-K3Hn4?t=40}{Ausweichen von Hindernissen für fliegende Roboter}
   	\end{itemize}
   \end{frame}
   
