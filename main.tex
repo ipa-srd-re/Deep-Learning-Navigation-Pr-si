@@ -1,4 +1,4 @@
-\documentclass[aspectratio=1610]{beamer}
+\documentclass[aspectratio=169]{beamer}
 \usetheme{metropolis}           % Use metropolis theme
 \title{Machine learning im Bereich der Robotik}
 \date{\today}
@@ -18,6 +18,7 @@
   \section{Quadrotor im Wald}
   \begin{frame}{Quadrotor im Wald}
   \begin{center}
+  	% http://rpg.ifi.uzh.ch/docs/RAL16_Giusti.pdf
   	\includegraphics[scale=0.15]{img/quadrotor.png} \\
   	\url{https://www.youtube.com/watch?v=umRdt3zGgpU}
   \end{center}
@@ -77,31 +78,29 @@
   \end{frame}
   
   \begin{frame}{EUROPA2 - European Robotic Pedestrian Assistant 2.0}
+  	\begin{center}
+  		\includegraphics[scale=0.38]{img/europa2_lasers.png}
+  	\end{center}
+  \end{frame}
+  
+  \begin{frame}{EUROPA2 - European Robotic Pedestrian Assistant 2.0}
   	Es gibt ca 60 Dokumente zu Themen wie
   	\begin{itemize}
-  		% http://europa2.informatik.uni-freiburg.de/files/kretzschmar14icra.pdf
-  		\item \textbf{Vorhersagen zur Bewegung von Menschen}
+  		%\item \href{http://europa2.informatik.uni-freiburg.de/files/kretzschmar14icra.pdf}{\textit{Vorhersagen zur Bewegung von Menschen}}
+  		%\pause
+  		\item \href{http://europa2.informatik.uni-freiburg.de/files/ilg14icra.pdf}{Rekonstruktion von bewegten Objekten mithilfe eines 2D Laserscanners und einer Kamera}
   		\pause
-  		% http://europa2.informatik.uni-freiburg.de/files/ilg14icra.pdf
-  		\item Rekonstruktion von bewegten Objekten mithilfe eines 2D Laserscanners und einer Kamera
+  		\item \href{http://europa2.informatik.uni-freiburg.de/files/kuemmerle14jfr.pdf}{\textit{Autonome Navigation in populierten Gegenden}}
   		\pause
-  		% http://europa2.informatik.uni-freiburg.de/files/kuemmerle14jfr.pdf
-  		\item Autonome Navigation in populierten Gegenden
+  		\item \href{http://europa2.informatik.uni-freiburg.de/files/ruchti15icra.pdf}{Lokalisierung in OpenStreetMap mithilfe eines 3D scanners}
   		\pause
-  		% http://europa2.informatik.uni-freiburg.de/files/ruchti15icra.pdf
-  		\item Lokalisierung in OpenStreetMap mithilfe eines 3D scanners
+  		%\item \href{http://europa2.informatik.uni-freiburg.de/files/vysotska15icra.pdf}{Lokalisierung unter verschiedenen Lichtverhältnissen}
   		\pause
-  		% http://europa2.informatik.uni-freiburg.de/files/vysotska15icra.pdf
-  		\item Lokalisierung unter verschiedenen Bedingungen
+  		\item \href{http://europa2.informatik.uni-freiburg.de/files/oliveira16icra.pdf}{\textbf{Identifizierung von menschlichen Körperteilen mithilfe von Computer Vision und Convoluted Neural Networks}}
   		\pause
-  		% http://europa2.informatik.uni-freiburg.de/files/oliveira16icra.pdf
-  		\item \textbf{Identifizierung von menschlichen Körperteilen mithilfe von Computer Vision und Convoluted Neural Networks}
+  		\item \href{http://europa2.informatik.uni-freiburg.de/files/IROS16_1259_FI.pdf}{\textit{Vorhersage von menschlichen Aktionen}}
   		\pause
-  		% http://europa2.informatik.uni-freiburg.de/files/IROS16_1259_FI.pdf
-  		\item Vorhersage von menschlichen Aktionen
-  		\pause
-  		% http://europa2.informatik.uni-freiburg.de/files/kretzschmar16ijrr.pdf
-  		\item \textbf{Lernen und Nachahmung von menschlichen Bewegungen}
+  		\item \href{http://europa2.informatik.uni-freiburg.de/files/kretzschmar16ijrr.pdf}{\textit{Lernen und Nachahmung von menschlichen Bewegungen}}
   	\end{itemize}
   \end{frame}
   
@@ -118,20 +117,15 @@
   \begin{frame}{LifeNav}
   	Es gibt ca 40 Dokumente zu Themen wie
   	\begin{itemize}
-  		% http://www.lifelong-navigation.eu/files/tipaldi13icra.pdf
-  		\item Wiedererkennung von Orten
+  		\item \href{http://www.lifelong-navigation.eu/files/tipaldi13icra.pdf}{Wiedererkennung von Orten}
+  		\pause		
+  		\item \href{http://www.lifelong-navigation.eu/files/tipaldi13ijrr.pdf}{Lokalisierung in veränderbaren Umgebungen}
   		\pause
-		% http://www.lifelong-navigation.eu/files/tipaldi13ijrr.pdf  		
-  		\item Lokalisierung in veränderbaren Umgebungen
+  		\item \href{http://www.lifelong-navigation.eu/files/valada15isrr.pdf}{\textbf{Lernen von Features basierend auf Akkustik}}
   		\pause
-  		% http://www.lifelong-navigation.eu/files/valada15isrr.pdf
-  		\item \textbf{Lernen von Features basierend auf Akkustik}
+  		\item \href{http://www.lifelong-navigation.eu/files/mazuran15icra.pdf}{\textit{Lehren und Optimierung eines Pfades}}
   		\pause
-  		% http://www.lifelong-navigation.eu/files/mazuran15icra.pdf
-  		\item \textbf{Lehren und Optimierung eines Pfades}
-  		\pause
-  		% http://www.lifelong-navigation.eu/files/valada16rssws.pdf
-  		\item \textbf{Segmentierung eines Bildes unter schwierigen Bedingungen}
+  		\item \href{http://www.lifelong-navigation.eu/files/valada16rssws.pdf}{\textbf{Segmentierung eines Bildes unter schwierigen Bedingungen}}
   	\end{itemize}
   \end{frame}
   
@@ -152,6 +146,8 @@
   		\item \href{https://www.youtube.com/watch?v=fL3YCIPxuhM&feature=youtu.be}{Jagen eines Beuteroboters}
   		% http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6630809
   		\item \href{https://youtu.be/hNsP6-K3Hn4?t=40}{Ausweichen von Hindernissen für fliegende Roboter}
+  		% http://arxiv.org/pdf/1602.01783.pdf
+  		\item \href{https://www.youtube.com/watch?v=nMR5mjCFZCw}{Deepmind Bewegung ohne Lokalisierung}
   	\end{itemize}
   \end{frame}
   
